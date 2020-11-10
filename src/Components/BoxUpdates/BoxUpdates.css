@@ -1,0 +1,35 @@
+.box-update-wrapper{
+    width: 258px;
+    height: 134px;
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.box-update-wrapper h3{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #9FA2B4;
+}
+
+.box-update-wrapper p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #252733;
+}
+
+.box-update-wrapper #change-color{
+    color: #3751FF;
+}

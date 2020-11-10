@@ -1,0 +1,14 @@
+#register-button{
+    width:140px;
+    height: 36px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #FFFFFF;
+}

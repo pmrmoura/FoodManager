@@ -1,0 +1,33 @@
+.box-product-wrapper {
+    width: 138px;
+    height: 205px;
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+}
+
+.box-product-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box-product-wrapper img{
+    width: 138px;
+    height: 151px;
+} 
+
+.box-product-content #name-product, .box-product-content #details{
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 10px;
+    position: relative;
+    line-height: 15px;
+    color: #000000;
+}
+
+.box-product-content #details{
+    font-weight: normal;
+    bottom: 14px;
+    font-size: 7px;
+}

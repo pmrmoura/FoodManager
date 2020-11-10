@@ -1,0 +1,21 @@
+.updates-wrapped{
+    height: 307px;
+    box-sizing: border-box;
+    background: #F2F2F2;
+}
+
+.updates-wrapped button {
+    margin: 12px;
+    position: relative;
+    left: 1142px;
+}
+.updates-wrapped .update-boxes{
+    position: relative;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#register-button{
+}

@@ -1,0 +1,98 @@
+.box-information-wrapper{
+    width: 546px;
+    height: 336px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    padding: 16px 32px;
+}
+
+.box-information-wrapper #see-more {
+    position: relative;
+    top: 4px;
+}
+
+.box-information-wrapper  #profit-product {
+    position: relative;
+    bottom: 18px;
+}
+
+.box-information-wrapper header, .box-information-wrapper .product-information .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.box-information-wrapper .product-information .product {
+    border-bottom: 1px solid #DFE0EB;
+}
+
+
+.box-information-wrapper header h3{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #252733;
+}
+
+.box-information-wrapper header p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: #3751FF;
+}
+
+.box-information-wrapper p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #9FA2B4;
+}
+
+.product h3{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #252733;
+}
+
+.product p{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.2px;
+}
+
+#first-percentage{
+    color: #75CA09;
+}
+
+#second-percentage {
+    color:#FF000F;
+}
+
+#third-percentage{
+    color: #CED202;
+}
+
+#fourth-percentage{
+    color: #13CA1B;
+}

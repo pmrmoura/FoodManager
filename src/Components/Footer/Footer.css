@@ -1,0 +1,43 @@
+.box-footer-wrapper{
+    background: #F2F2F2;
+    height: 310px;
+    width: 90%;
+    padding: 0px 5%;
+}
+
+.box-footer-wrapper .box-footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-footer-wrapper .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.box-footer-wrapper .top h2{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.box-footer-wrapper .top #register-button{
+    width:140px;
+    height: 36px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    cursor: pointer;
+    color: #000000;
+}

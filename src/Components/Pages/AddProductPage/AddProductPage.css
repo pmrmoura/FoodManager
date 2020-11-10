@@ -1,0 +1,70 @@
+.product-wrapper {
+    width: 65%;
+    height: 300px;
+    position: relative;
+    left: 250px;
+    top: 140px;
+    background-color: #F4F1F1;
+}
+
+.product-wrapper form{
+    position: relative;
+    top: 10px;
+}
+
+.product-wrapper header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-wrapper header h2, .product-wrapper header button {
+    margin: 10px;
+}
+
+.product-wrapper header h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px; 
+    line-height: 28px;
+    color: #333333;
+}
+
+.product-wrapper header button{
+    width: 173px;
+    height: 39px;
+    background: #525252;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Segoe UI'
+}
+
+.product-wrapper .label-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI';
+}
+
+.product-wrapper .label-input-wrapper label {
+    position: relative;
+    right: 108px;
+}
+
+.product-wrapper .label-input-wrapper input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #D4D4D4;
+    box-sizing: border-box;
+    border-radius: 6px; 
+    width: 273px;
+}
+
+#preco-venda {
+    position: relative;
+    right: 74px;
+}
