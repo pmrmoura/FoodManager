@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useCookies } from 'react-cookie';
+import { Redirect } from 'react-router-dom';
 import './NavBar.css';
 
 
 export default function NavBar({ gerente }) {
     const [cookie, setCookie] = useCookies()
+    const[redirect, setRedirect] = useState('');
 
     function handleLogOut() {
-        cookie.setCookie('token', null)
+        setCookie('token', null)
+        setRedirect('/')
+    }
+
+    if (redirect) {
+        return(
+            <Redirect to = {redirect}/>
+        );
     }
     return (
         <div className="navbar-wrapper">

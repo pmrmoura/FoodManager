@@ -8,6 +8,13 @@
     cursor: pointer;
 }
 
+.box-update-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
 .box-update-wrapper h3{
     font-family: 'Segoe UI';
     font-style: normal;
@@ -28,6 +35,7 @@
     text-align: center;
     letter-spacing: 1px;
     color: #252733;
+    margin-top: 10px;
 }
 
 .box-update-wrapper #change-color{

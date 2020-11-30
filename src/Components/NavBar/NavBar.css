@@ -6,6 +6,7 @@
     height: 64px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DFE0EB;
+    margin-top: 20px;
 }
 
 .navbar-wrapper .right-content-navbar {
@@ -24,6 +25,8 @@
     position: relative;
     bottom: 16px;
     font-family: 'Segoe UI';
+    margin-top: 20px;
+    cursor: pointer;
 }
 
 .navbar-wrapper h2, .navbar-wrapper .right-content-navbar {

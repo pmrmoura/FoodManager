@@ -5,6 +5,7 @@
     background-color: #FFFFFF;
     border: 1px solid #DFE0EB;
     padding: 16px 32px;
+    margin: 20px;
 }
 
 .box-information-wrapper #see-more {
@@ -49,6 +50,10 @@
     text-align: right;
     letter-spacing: 0.2px;
     color: #3751FF;
+}
+
+#profit-product {
+    margin-top: 20px;
 }
 
 .box-information-wrapper p{
