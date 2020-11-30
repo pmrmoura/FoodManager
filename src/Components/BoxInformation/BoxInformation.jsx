@@ -14,7 +14,7 @@ function BoxInformation(props) {
                 {products?.map((product) => (
                     <div className="product">
                         <h3>{product.name}</h3>
-                        <p id="first-percentage"> {product.profitMargin * 100}%</p>
+                        <p id="first-percentage"> {(product.profitMargin * 100) - 100}%</p>
                     </div>
                 ))}
                 <center>
