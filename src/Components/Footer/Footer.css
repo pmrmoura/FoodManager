@@ -1,7 +1,7 @@
 .box-footer-wrapper{
     background: #F2F2F2;
     height: 310px;
-    width: 90%;
+    width: 100%;
     padding: 0px 5%;
 }
 
@@ -26,6 +26,7 @@
     font-size: 32px;
     line-height: 37px;
     color: #000000;
+    margin: 30px;
 }
 
 .box-footer-wrapper .top #register-button{

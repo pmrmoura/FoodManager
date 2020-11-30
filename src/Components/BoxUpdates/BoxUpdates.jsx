@@ -23,7 +23,7 @@ function BoxUpdates({ title, content, children }) {
     }
     return (
         <div className="box-update-wrapper" onClick={handleBoxClick}>
-            <div>
+            <div className="box-update-info">
                 <h3>{title}</h3>
                 <p >{content}</p>
             </div>
