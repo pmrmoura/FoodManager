@@ -3,17 +3,47 @@ import { Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NewUserPage.css';
 import { Redirect } from 'react-router-dom';
+import API from '../../../services/api';
 
 export default function NewUserPage() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+    const [redirect, setRedirect] = useState('');
 
     function onSubmit(event){
         event.preventDefault();
-        console.log(username, email, password, confirmPassword);
+        if(password === confirmPassword){
+            signUp(username, email, password);
+        } else {
+            alert('Senhas diferentes');
+        }
 
+    }
+
+    function signUp(username, email, password) {
+        API.post('api/auth/signup', {
+            username: username,
+            email: email,
+            password: password
+        }).then((response) => {
+            const {message} = response;
+            alert(message);
+            redirecting();
+        }).cacth((error) => {
+            console.log(error); 
+        })
+    }
+
+    function redirecting(){
+        setRedirect('/');
+    }
+
+    if(redirect){
+        return(
+            <Redirect to= {redirect} />
+        );
     }
 
     return (

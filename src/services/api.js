@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const APi = axios.create({
+const API = axios.create({
     baseURL: 'link aqui'
 });
 

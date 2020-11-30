@@ -3,17 +3,32 @@ import { Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AuthenticationPage.css';
 import { Redirect } from 'react-router-dom';
+import API from '../../../services/api';
 
 
 export default function AuthenticationPage() {
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [redirect, setRedirect] = useState('');
     const [id, setId] = useState('');
 
     function onSubmit(event) {
         event.preventDefault();
-        console.log(email, password);
+        login(username, password);
+    }
+
+    function login(username, password) {
+        API.post('api/auth/signin', {
+            username : username,
+            password : password
+        }).then((response) => {
+            const { id } = response;
+            setId(id);
+            document.cookie = JSON.stringify(response);
+            handleSignIn();
+        }).cacth((error) => {
+            console.log(error);
+        })
     }
 
     function handleSignIn() {
@@ -22,7 +37,6 @@ export default function AuthenticationPage() {
 
     function handleNewUser(){
         setRedirect('/sign-up');
-        console.log(redirect);
     }
 
     if (redirect) {
@@ -39,11 +53,11 @@ export default function AuthenticationPage() {
             <Form onSubmit={(event) => {
                 onSubmit(event);
             }}>
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter Email" onChange={(event) => {
+                <Form.Group controlId="formBasicUsername">
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control type="text" placeholder="Enter Username" onChange={(event) => {
                         const { value } = event.target;
-                        setEmail(value);
+                        setUsername(value);
                     }} />
                 </Form.Group>
 
