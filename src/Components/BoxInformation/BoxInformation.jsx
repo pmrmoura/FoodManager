@@ -17,6 +17,12 @@ function BoxInformation(props) {
                         <p id="first-percentage"> {product.profitMargin * 100}%</p>
                     </div>
                 ))}
+                <center>
+                    {products?.length === 0 && (
+                        <h2>Nenhum produto cadastrado!</h2>
+                    )}
+                </center>
+
             </div>
         </div>
     );

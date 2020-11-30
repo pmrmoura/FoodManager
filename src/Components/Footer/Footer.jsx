@@ -30,6 +30,12 @@ function Footer(props){
                 {products?.map((product) => (
                     <BoxProduct nomeProduto={product.name} idProduto={product._id} />
                 ))}
+
+                {products?.length === 0 && (
+                    <center>
+                        <h2>Nenhum produto cadastrado!</h2>
+                    </center>
+                )}
             </div>
         </div>
     );
