@@ -25,7 +25,7 @@ function MainPage() {
     }).catch((error) => {
       console.log(error);
     })
-  }, [])
+  })
 
   return (
     <div>
