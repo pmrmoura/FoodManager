@@ -28,8 +28,8 @@ export default function Updates(props){
                 }
             }
         }
-        profitToday = String(parseInt(profitToday / salesToday * 100)) + "%"
-        profitGeneral = String(parseInt(profitGeneral / salesGeneral * 100)) + "%"
+        profitToday = String(parseInt((profitToday / salesToday * 100) - 100)) + "%"
+        profitGeneral = String(parseInt((profitGeneral / salesGeneral * 100) - 100)) + "%"
         return [salesToday, salesGeneral, profitToday, profitGeneral]
     }
 
